@@ -1,0 +1,2109 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     67967,       2101]
+NotebookOptionsPosition[     64080,       2039]
+NotebookOutlinePosition[     64429,       2054]
+CellTagsIndexPosition[     64386,       2051]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["CSCI 3104 Spring 2018\nProblem Set 1\nMerola, Michael\
+\n06/04/1998",
+ FontSize->16]], "Text",
+ CellChangeTimes->{
+  3.7257600824427023`*^9},ExpressionUUID->"5102a1a3-1916-4334-8c5c-\
+22a1ce94f989"],
+
+Cell[CellGroupData[{
+
+Cell["Problem Set 1", "Title",
+ CellChangeTimes->{{3.7257589306068196`*^9, 
+  3.7257589379152594`*^9}},ExpressionUUID->"b6567dea-8928-49b6-82a7-\
+93227faffffd"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1", "Section",
+ CellChangeTimes->{{3.7258285311183395`*^9, 
+  3.725828537992634*^9}},ExpressionUUID->"a3d8e008-43ee-4ca2-a33c-\
+ca738bd2a8b7"],
+
+Cell[TextData[StyleBox["(10 pts total) For each of the following claims, \
+determine whether they are true or false. Justify your determination. If the \
+claim is false, state the correct asymptotic relationship.",
+ FontSize->18,
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.725759759777893*^9, 3.725759810561946*^9}, {
+  3.7257598806226315`*^9, 3.725759926704198*^9}, {3.7257599685595455`*^9, 
+  3.725760012602719*^9}, {3.725760181938398*^9, 3.7257602037684155`*^9}, {
+  3.725760309088653*^9, 3.7257603095418606`*^9}, {3.725760443154201*^9, 
+  3.7257604478105497`*^9}, {3.7257604781382294`*^9, 3.725760483636857*^9}, {
+  3.725760524006254*^9, 3.725760627479531*^9}, {3.725760846795659*^9, 
+  3.7257609594921713`*^9}, {3.7257609936720395`*^9, 3.7257610148082705`*^9}, {
+  3.725761069074638*^9, 3.725761103441083*^9}, {3.7258285426399894`*^9, 
+  3.7258285432596507`*^9}},ExpressionUUID->"96824ee6-a15e-4126-afe5-\
+a10ef5b6f8cd"],
+
+Cell[TextData[{
+ StyleBox["\n",
+  FontSize->18],
+ StyleBox["(a) \tn + 1 = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"O", "(", 
+    SuperscriptBox["n", "4"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"da8edb1c-7d87-4d9d-abf2-76d83b9d737b"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "45793188-6b4b-4023-801a-bb4dac10db72"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{"n", "+", "1"}], 
+     SuperscriptBox["n", "4"]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b080fac4-9d4f-419e-be98-2a1767ad53fd"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"5cb94854-b70d-4db4-818c-2f44672a4ad8"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox["1", 
+     RowBox[{"4", 
+      SuperscriptBox["n", "3"]}]], "]"}], TraditionalForm]],ExpressionUUID->
+  "0675e8c3-b8c9-4a89-a974-516ea5a4a121"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "\[Infinity]"], TraditionalForm]],ExpressionUUID->
+  "155d7c48-f12d-48a9-84de-a8f8c5700585"],
+ StyleBox["   =   0\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["TRUE",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["\n\t\n",
+  FontSize->18],
+ StyleBox["(b)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2", 
+    RowBox[{"2", "n"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"b4bffcd1-c769-4548-900f-51b851562e60"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"O", "(", 
+    SuperscriptBox["2", "n"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"bd89285c-cd96-489d-b493-145f26ee06e4"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "5359e29d-1fef-4cd2-abcf-4f08170afd8f"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["2", 
+      RowBox[{"2", "n"}]], 
+     SuperscriptBox["2", "n"]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b3a9cd62-636b-469c-b51b-db91564b81bb"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"6179bda4-c1b2-422c-9b55-61cd1c740a92"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       SuperscriptBox["2", "n"], ")"}], "2"], 
+     SuperscriptBox["2", "n"]], "]"}], TraditionalForm]],ExpressionUUID->
+  "112ddcf8-24c7-4275-9daa-17efbc74474c"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"58c1c1a6-2850-44e6-90b9-7400c1595cf4"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    SuperscriptBox["2", "n"], "]"}], TraditionalForm]],ExpressionUUID->
+  "b4a4e7b7-5fa6-4c2e-87c3-9be995c99de9"],
+ StyleBox["   =   \[Infinity]\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["FALSE,   n + 1 = ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalOmega]", "(", 
+    SuperscriptBox["n", "4"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "edd0a76e-7268-4bf6-9318-b46e4c078942"],
+ StyleBox["\n\t\n",
+  FontSize->18],
+ StyleBox["(c)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[" \t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2", "n"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"a91df4a5-930d-4909-b3b0-925e20b24ca4"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", 
+    SuperscriptBox["2", 
+     RowBox[{"n", "+", "7"}]], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"7dd7faad-2acf-4457-8167-3eb10c667a6c"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "312fe763-7b30-4583-89ad-d1c20811af59"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["2", "n"], 
+     SuperscriptBox["2", 
+      RowBox[{"n", "+", "7"}]]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "0a0f6ac3-14ac-4ed9-bce8-a15313900ddc"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"8c1f8ac4-e498-40f4-a3cc-0fba956b63fb"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["2", "n"], 
+     RowBox[{
+      SuperscriptBox["2", "n"], "*", 
+      SuperscriptBox["2", "7"]}]], "]"}], TraditionalForm]],ExpressionUUID->
+  "9ce63347-2670-40de-aea3-0a4ff2567d55"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", 
+    SuperscriptBox["2", "7"]], TraditionalForm]],ExpressionUUID->
+  "ecb8e8a7-8289-4f4c-b2cb-3f72ab35697f"],
+ StyleBox["  ",
+  FontSize->18],
+ StyleBox[" *constant",
+  FontSize->14],
+ StyleBox["\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["TRUE",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["\n\t\n",
+  FontSize->18],
+ StyleBox["(d)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\t",
+  FontSize->18],
+ StyleBox["1 = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"O", "(", 
+    FractionBox["1", "n"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"023deb32-14f1-4426-947f-55863caa1b54"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d20d489f-164c-4ba6-a4d3-5bda26990014"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox["1", 
+     FractionBox["1", "n"]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "9de0994c-61de-4eb9-bf0f-2a86309bf183"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"e32fa285-5abf-42a0-8a85-962787127eea"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", "n", "]"}], TraditionalForm]],ExpressionUUID->
+  "42efc642-d01e-4529-a964-ba5a2d817c27"],
+ StyleBox["   =   \[Infinity]\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["FALSE,   1 = ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalOmega]", "(", 
+    FractionBox["1", "n"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "ab4272d2-87d8-4ea5-9601-1a72fbe41ce4"],
+ StyleBox["\n\t\n",
+  FontSize->18],
+ StyleBox["(e)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[" \t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["ln", "2"], "n"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"c98fd4f2-62c2-4d69-bde7-9e47b7258b85"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", 
+    RowBox[{
+     SuperscriptBox["lg", "2"], "n"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"15ef5bd0-8126-4c5b-8c62-d95099e2effd"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "c67cf747-6365-452a-862d-8edb510add19"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["ln", "2"], "n"}], 
+     RowBox[{
+      SuperscriptBox["lg", "2"], "n"}]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "5b9f3153-3ddf-4c6e-9b87-b3d655601d2b"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"043d778c-b235-4524-8562-bfe1aac6e3e5"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{"ln", " ", "n"}], 
+       RowBox[{"lg", " ", "n"}]], ")"}], "2"], "]"}], TraditionalForm]],
+  ExpressionUUID->"62fc7498-a5db-4786-a411-fb9d9b7804ba"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"644131d9-b1b6-41f5-bf24-941a7bb1a8fb"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{"lg", " ", 
+        RowBox[{"n", " ", "/", " ", "lg"}], " ", "e"}], 
+       RowBox[{"lg", " ", 
+        RowBox[{"n", " ", "/", " ", "lg"}], " ", "2"}]], ")"}], "2"], "]"}], 
+   TraditionalForm]],ExpressionUUID->"c12edf06-5738-4658-891d-f79fe01a0f1e"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"caeabfcd-205e-4e1c-a939-ed9175e2b79b"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{"lg", " ", "2"}], 
+       RowBox[{"lg", " ", "e"}]], ")"}], "2"], "]"}], TraditionalForm]],
+  ExpressionUUID->"1e250af6-5268-4fa1-aca8-b0f0333a1c32"],
+ StyleBox["   =   ",
+  FontSize->18],
+ StyleBox["*some constant*",
+  FontSize->14],
+ StyleBox["\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["TRUE",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["\n\n",
+  FontSize->18],
+ StyleBox["(f)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["n", "2"], "+", 
+    RowBox[{"2", "n"}], "-", "4"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"5433d99c-2bbd-4860-97df-938b9d7d36fb"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalOmega]", "(", 
+    SuperscriptBox["n", "2"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"572255b5-2f34-4db4-a496-c15efb6b7d03"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e072ca2d-ea8e-4a01-be40-a4751550bb4c"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["n", "2"], "+", 
+      RowBox[{"2", "n"}], "-", "4"}], 
+     SuperscriptBox["n", "2"]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "8c340c68-5596-4784-a00c-4534ade7f7ce"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"6b0ff790-f79e-4592-abaf-4a54280ae71e"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"2", "n"}], "+", "2"}], 
+     RowBox[{"2", "n"}]], "]"}], TraditionalForm]],ExpressionUUID->
+  "eb040bdc-2017-4c59-8709-600c306470b5"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"10937b10-1a46-4928-b226-9ffc74b769bf"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox["2", "2"], "]"}], TraditionalForm]],ExpressionUUID->
+  "79079155-22c8-4306-bb6b-d9b81711646b"],
+ StyleBox["   =   1\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["FALSE,   ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["n", "2"], "+", 
+    RowBox[{"2", "n"}], "-", "4"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "6b71b0ab-bf33-4cd3-af61-8170a8dbce53"],
+ StyleBox[" = ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", 
+    SuperscriptBox["n", "2"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "f31a2a3b-9780-46b8-98ac-371facdadace"],
+ StyleBox["\n\t\n",
+  FontSize->18],
+ StyleBox["(g)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[" \t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["3", 
+    RowBox[{"3", "n"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"38eebc4b-9edc-4afb-ac74-1be9421868e0"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", 
+    SuperscriptBox["9", "n"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"839438ce-427d-4cfb-9bc4-df6ad6f7420a"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "3279d4c6-b9f3-4df0-8a81-8fb0ddad733b"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["3", 
+      RowBox[{"3", "n"}]], 
+     SuperscriptBox["9", "n"]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b8249045-373a-48c2-8992-99a422c56a96"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"464e4e27-33d7-4d2c-96ba-83d882e8169b"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        SuperscriptBox["3", "n"], ")"}], "2"], " ", "*", " ", 
+      SuperscriptBox["3", "n"]}], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       SuperscriptBox["3", "n"], ")"}], "2"]], "]"}], TraditionalForm]],
+  ExpressionUUID->"342f488f-6a50-495f-8ed7-da26a792d5b6"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "6ab544df-f26e-4d2b-92c1-9787aa907149"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    SuperscriptBox["3", "n"], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b2133fe2-0651-478a-95b4-494cea9130aa"],
+ StyleBox["   =   \[Infinity]\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["FALSE,   ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["3", 
+    RowBox[{"3", "n"}]], TraditionalForm]],
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "6f98e1e3-f71f-4eb7-b8c6-b3c9155f4b4a"],
+ StyleBox[" = ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalOmega]", "(", 
+    SuperscriptBox["9", "n"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "c0d90e1a-6ca1-4a7a-808d-1912acaedac0"],
+ StyleBox["\n\t\n",
+  FontSize->18],
+ StyleBox["(h)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2", 
+    RowBox[{"n", "+", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"f018185d-4afb-4e36-a033-65f9ff8d0c42"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", 
+    SuperscriptBox["2", 
+     RowBox[{"nlg", " ", "n"}]], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"787e1cee-4644-4be9-889e-2966c73580e2"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "05749e60-cc98-4a25-91b7-c99fc17ba4ed"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["2", 
+      RowBox[{"n", "+", "1"}]], 
+     SuperscriptBox["2", 
+      RowBox[{"nlg", " ", "n"}]]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "4d0c47c5-c929-43eb-81a7-36832f16b659"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"7b9ac22f-4f40-4144-8c0a-14e858034751"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["2", "n"], "*", " ", "2"}], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       SuperscriptBox["2", "n"], ")"}], 
+      RowBox[{"lg", " ", "n"}]]], "]"}], TraditionalForm]],ExpressionUUID->
+  "ffbb430d-0c32-4bdd-9aa3-b3ca428d62c5"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"cffb93fe-ea2d-4096-88a9-5dd81a7b5fc8"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        SuperscriptBox["2", "n"], ")"}], 
+       RowBox[{"1", "-", 
+        RowBox[{"lg", " ", "n"}]}]], 
+      RowBox[{"(", "2", ")"}]}], "1"], "]"}], TraditionalForm]],
+  ExpressionUUID->"78672380-3cc9-4ee1-8aa1-b064b0a2df19"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"9aaab6e3-6244-46cb-9c5e-ad59e4b4078a"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["2", 
+      RowBox[{"n", "-", 
+       RowBox[{"nlg", " ", "n"}], " ", "+", " ", "1"}]], "1"], "]"}], 
+   TraditionalForm]],ExpressionUUID->"4f37d5f2-11ee-467e-8710-fe2f3e432f1c"],
+ StyleBox["   =   0  \n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["FALSE,   ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2", 
+    RowBox[{"n", "+", "1"}]], TraditionalForm]],
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "0a05e4a6-5772-4f5e-9074-0ab45a987a60"],
+ StyleBox[" = ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"O", "(", 
+    SuperscriptBox["2", 
+     RowBox[{"nlg", " ", "n"}]], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "5b811342-4212-4d8e-a2e7-e07bc6d0acb5"],
+ StyleBox["\n\t\n",
+  FontSize->18],
+ StyleBox["(i)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SqrtBox["n"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,
+  FontWeight->"Bold",ExpressionUUID->"f5011a8b-16ca-468d-848e-c85fe23362a2"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"O", "(", 
+    RowBox[{"lg", " ", "n"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"622b3817-3170-4cc6-8195-da445cc6967a"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e210e600-f592-4031-b17f-e1de0c6db9f6"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SqrtBox["n"], 
+     RowBox[{"lg", " ", "n"}]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "6fb5da29-4818-48ba-ad88-cff4426866e9"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"20e2a2be-2f36-4528-8517-bfaf80408ee8"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"1", "/", "2"}], " ", "*", " ", 
+      SuperscriptBox["n", 
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}]]}], 
+     RowBox[{"1", "/", "n"}]], "]"}], TraditionalForm]],ExpressionUUID->
+  "c36f5077-38da-4b51-b968-d03822443481"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"0a7d2002-6c4a-41d8-ae30-20b6f64a9fb6"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox["n", 
+     RowBox[{"2", 
+      SuperscriptBox["n", 
+       RowBox[{"1", "/", "2"}]]}]], "]"}], TraditionalForm]],ExpressionUUID->
+  "7328a4ee-a7bb-4c11-8ce5-bd8b40d14704"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  ExpressionUUID->"d20f642a-2867-44c9-8e6b-62cd5a0452ee"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["n", 
+      RowBox[{"1", "/", "2"}]], "2"], "]"}], TraditionalForm]],
+  ExpressionUUID->"5cb5c7cb-5d18-4f6a-b7d0-dd05ae7e5d4c"],
+ StyleBox["   =   \[Infinity]\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["FALSE,   ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   SqrtBox["n"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "d9fd3283-8663-4343-940d-afe033be4b3f"],
+ StyleBox[" = ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalOmega]", "(", 
+    RowBox[{"lg", " ", "n"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "e3671fb3-4b82-44cf-8c42-fd46a4a35177"],
+ StyleBox["\n\n",
+  FontSize->18],
+ StyleBox["(j)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[" \t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "100"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,
+  FontWeight->"Bold",ExpressionUUID->"032b1c63-f19b-4e5f-9350-d2d23c157016"],
+ StyleBox[" = ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", "1", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"564e0967-bb5c-4529-9783-42fed31d6068"],
+ "\n",
+ StyleBox["\n\t",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Limit]", 
+    RowBox[{"n", "\[RightArrow]", "\[Infinity]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "dfaeffd7-9743-49ab-ab12-87d3082e465d"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    FractionBox[
+     SuperscriptBox["10", "100"], "1"], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "5d5a8e02-1058-49ef-8fad-7bd7dc4cdeb1"],
+ StyleBox["   =   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "100"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"f9f09881-6901-42d8-95db-7d7c45d6dc9b"],
+ StyleBox["    ",
+  FontSize->18],
+ StyleBox["*f does not rely on n ; RAM model for O(1) constant",
+  FontSize->14],
+ StyleBox["\n\t\[Therefore]  ",
+  FontSize->18],
+ StyleBox["TRUE",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]]
+}], "Text",
+ CellChangeTimes->{{3.725761095863906*^9, 3.7257611260362206`*^9}, {
+   3.725761306682761*^9, 3.725761333117086*^9}, {3.725761370804347*^9, 
+   3.7257614213758883`*^9}, {3.725761475085785*^9, 3.725761484483808*^9}, {
+   3.7257615339934907`*^9, 3.7257618949878674`*^9}, {3.7257620848058977`*^9, 
+   3.725762104995605*^9}, {3.7257621480167103`*^9, 3.725762158051101*^9}, {
+   3.7257625260082006`*^9, 3.7257625329065895`*^9}, {3.725762565261629*^9, 
+   3.725762694917562*^9}, {3.7257627259812126`*^9, 3.725762968858412*^9}, {
+   3.725763177181783*^9, 3.725763241129862*^9}, {3.725763293203395*^9, 
+   3.7257633162156153`*^9}, {3.725763351331073*^9, 3.72576344966063*^9}, {
+   3.7257634829532*^9, 3.725763501102523*^9}, {3.7257635362079*^9, 
+   3.725763608555345*^9}, {3.725763666402238*^9, 3.7257636676485524`*^9}, {
+   3.7257637302360787`*^9, 3.725763786723342*^9}, 3.7257638199978914`*^9, {
+   3.7257639033836927`*^9, 3.725763931841432*^9}, {3.725763999801219*^9, 
+   3.7257640337886577`*^9}, {3.725764068194151*^9, 3.7257640827037563`*^9}, {
+   3.725764112891066*^9, 3.7257641206587253`*^9}, {3.7257641863294315`*^9, 
+   3.7257641973828382`*^9}, {3.7257642442635584`*^9, 
+   3.7257643085295315`*^9}, {3.7257643390527697`*^9, 3.725764496460494*^9}, {
+   3.7257645429331264`*^9, 3.7257645735746512`*^9}, {3.7257646051386614`*^9, 
+   3.725764996314272*^9}, {3.725765042028884*^9, 3.725765043268214*^9}, {
+   3.7257651363468494`*^9, 3.725765140725458*^9}, {3.725765188025323*^9, 
+   3.725765203230781*^9}, {3.7257652333007393`*^9, 3.7257652527846107`*^9}, {
+   3.7257653069309273`*^9, 3.725765496043034*^9}, {3.7257655987322235`*^9, 
+   3.725765608955426*^9}, {3.7257656408352327`*^9, 3.725765696842251*^9}, {
+   3.7257660326652308`*^9, 3.7257661317448173`*^9}, {3.725829521595933*^9, 
+   3.7258295350216513`*^9}, 3.7258295710605273`*^9, {3.72582962724199*^9, 
+   3.725829664746767*^9}},ExpressionUUID->"ac1ae975-f18b-4b4e-a05b-\
+4912da74db80"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 2", "Section",
+ CellChangeTimes->{{3.7258285569480534`*^9, 
+  3.7258285585653553`*^9}},ExpressionUUID->"0aa7c719-ba12-44ec-be9e-\
+89c1a8b9d8ca"],
+
+Cell[TextData[{
+ StyleBox["(15 pts) Professor Dumbledore needs your help optimizing the \
+Hogwarts budget. You\[CloseCurlyQuote]ll be given an array A of exchange \
+rates for muggle money and wizard coins, expressed at integers. Your task is \
+help Dumbledore maximize the payoff by buying at some time i and selling at a \
+future time j > i, such that both A[j] > A[i] and the corresponding \
+difference of A[j] \[Minus] A[i] is as large as possible.",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\n",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.7257662918006225`*^9, 3.7257663271787586`*^9}, {
+   3.72582856401987*^9, 3.725828571025511*^9}, {3.7258289386440706`*^9, 
+   3.725828960270606*^9}, 
+   3.7258319448991785`*^9},ExpressionUUID->"9700a364-cec8-40ec-8f59-\
+1f13f1b88545"],
+
+Cell[TextData[{
+ StyleBox["(a)",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[" \t",
+  FontSize->18],
+ StyleBox["Consider the pseudocode below that takes as input an array A of \
+size n:",
+  FontSize->18,
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.725828596451145*^9, 3.72582869058862*^9}, {
+   3.7258287365343843`*^9, 3.725828738771343*^9}, 
+   3.7258292262111044`*^9},ExpressionUUID->"23fb188e-14f2-48ef-aeab-\
+608502755d05"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"makeWizardMoney", 
+     RowBox[{"(", "A", ")"}]}], " ", ":", "\n", "\t", "maxCoinsSoFar"}], " ", 
+   "=", " ", "0"}],
+  FontSize->14], "\n", 
+ StyleBox[
+  RowBox[{"\t", 
+   RowBox[{
+    RowBox[{"for", " ", "i"}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"0", " ", "to", " ", "length", 
+      RowBox[{"(", "A", ")"}]}], "-", 
+     RowBox[{"1", " ", 
+      RowBox[{"{", "\n", 
+       StyleBox[
+        RowBox[{"\t", "\t"}]], 
+       RowBox[{
+        RowBox[{"for", " ", "j"}], " ", "=", " ", 
+        RowBox[{"i", "+", 
+         RowBox[{"1", " ", "to", " ", "length", 
+          RowBox[{"(", "A", ")"}], " ", 
+          RowBox[{"{", "\n", 
+           StyleBox[
+            RowBox[{"\t", "\t"}]], "\t", 
+           RowBox[{"coins", " ", "=", " ", 
+            RowBox[{
+             RowBox[{"A", "[", "j", "]"}], " ", "-", " ", 
+             RowBox[{
+              RowBox[{"A", "[", "i", "]"}], "\n", 
+              StyleBox[
+               RowBox[{"\t", "\t"}]], "\t", "if", " ", 
+              RowBox[{"(", 
+               RowBox[{"coins", " ", ">", " ", "maxCoinsSoFar"}], ")"}], " ", 
+              RowBox[{"{", " ", 
+               RowBox[{"maxCoinsSoFar", " ", "=", " ", "coins"}], " ", 
+               "}"}]}]}]}], "\n", "\t", "}"}]}]}]}], "}"}]}]}]}]}],
+  FontSize->14], "\n", 
+ StyleBox[
+  RowBox[{"\t", 
+   RowBox[{"return", " ", "maxCoinsSoFar"}]}],
+  FontSize->14]}], "Code",
+ CellChangeTimes->{{3.725829151146405*^9, 3.7258291815803757`*^9}, {
+  3.725829920367811*^9, 3.7258299448669806`*^9}},
+ EmphasizeSyntaxErrors->
+  True,ExpressionUUID->"bd9ccd27-a16a-42c0-b0a0-774e0e198a8d"],
+
+Cell[TextData[{
+ StyleBox[" What is the running time complexity of the procedure above? Write \
+your answer as a \[CapitalTheta] bound in terms of n.",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\n\n*let ",
+  FontSize->18],
+ StyleBox["n",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" = length(A)\n **the code has 2 for-loops based on array size ",
+  FontSize->18],
+ StyleBox["n\n ",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox["\n",
+  FontSize->18],
+ StyleBox["so",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox["...   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     SuperscriptBox["\[Sum]", 
+      RowBox[{"n", "-", "1"}]], 
+     RowBox[{"i", "=", "0"}]], 
+    RowBox[{"[", " ", 
+     RowBox[{
+      SubscriptBox[
+       SuperscriptBox["\[Sum]", "n"], 
+       RowBox[{"j", "=", 
+        RowBox[{"j", "+", "1"}]}]], 
+      RowBox[{"[", " ", 
+       RowBox[{
+        RowBox[{"A", "[", "j", "]"}], "+", 
+        RowBox[{"A", "[", "i", "]"}]}], "]"}]}], "]"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"5ac5de1b-984e-49d0-9255-1accf073d81b"],
+ StyleBox["  \n\n\[Therefore]    ",
+  FontSize->18],
+ StyleBox["time complexity is ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", 
+    SuperscriptBox["n", "2"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "87b3b692-3e44-446f-83fa-a783e7b4c758"]
+}], "Text",
+ CellChangeTimes->{
+  3.725829205449869*^9, {3.7258292356582355`*^9, 3.7258292368233337`*^9}, {
+   3.725829268575807*^9, 3.725829301837301*^9}, {3.7258293657453213`*^9, 
+   3.7258293687934837`*^9}, 3.7258297096692877`*^9, {3.725829754047376*^9, 
+   3.725829909442733*^9}, {3.725829957659008*^9, 3.725830051400393*^9}, {
+   3.7258300941300697`*^9, 
+   3.7258302209474487`*^9}},ExpressionUUID->"07f47812-28d5-4d20-8453-\
+2d1fd2c3ada8"],
+
+Cell[TextData[{
+ StyleBox["\n(b)\tExplain under what conditions on the contents of A the ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["makeWizardMoney",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" algorithm will return 0 coins.\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["The algorithm will return 0 coins if A contained all ints of the \
+same value ",
+  FontSize->18],
+ StyleBox["(ex.. A = [5, 5, 5, 5, 5])",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[", and if A was sorted entirely in decreasing order ",
+  FontSize->18],
+ StyleBox["(ex.. A = [5, 4, 3, 2, 1])",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[".",
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.7258302729538546`*^9, 3.7258303005642595`*^9}, {
+   3.7258303437601748`*^9, 3.725830486348513*^9}, 
+   3.725830813045768*^9},ExpressionUUID->"f0ef8481-7384-487c-8451-\
+f6b089fee94f"],
+
+Cell[TextData[{
+ StyleBox["\n(c)\tDumbledore knows you know that makeWizardMoney is wildly \
+inefficient. With a wink, he suggests writing a function to make a new array \
+M of size n such that...\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["M[i] = ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["min", 
+    RowBox[{"0", "\[LessEqual]", "j", "\[LessEqual]", "i"}]], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,
+  FontWeight->"Plain",ExpressionUUID->"2c233eb0-1540-427a-8c5d-81ecdd505dd3"],
+ StyleBox[" A[j] ",
+  FontSize->18],
+ StyleBox["\nThat is, M[i] gives the minimum value in the subarray of \
+A[0::i].\n\nWhat is the running time complexity of the pseudocode to create \
+the array M? Write your answer as a \[CapitalTheta] bound in terms of n.\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["To create array M, we would need to implement a for-loop into the \
+code that would run through the length of A and add the nessecary elements to \
+array M. Because the code only requires one loop based on size ",
+  FontSize->18],
+ StyleBox["n",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[", ",
+  FontSize->18],
+ StyleBox["the time complexity is \[CapitalTheta](",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["n",
+  FontSize->18,
+  FontSlant->"Italic",
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[")",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[".",
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.7258307012102137`*^9, 3.725830824121214*^9}, {
+  3.725831029437415*^9, 
+  3.725831268489686*^9}},ExpressionUUID->"b07ea77a-cb55-43b0-8edf-\
+5cfce8e67294"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["(d)\tUse the array M computed from (2c) to compute the maximum \
+coin return in time \[CapitalTheta](n).\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["By using the M array, the maximum coin return would be ",
+  FontSize->18],
+ StyleBox["16 coins",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[" ",
+  FontSize->18],
+ StyleBox["(19 max - 3 min)",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[".",
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.725831275531416*^9, 3.725831367950326*^9}, {
+  3.7258313980022326`*^9, 
+  3.725831398810384*^9}},ExpressionUUID->"c0497f92-e22a-499c-ba91-\
+dc43dc409f91"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["(e)\tGive Dumbledore what he wants: rewrite the original algorithm \
+in a way that combine parts (2b)(2d) to avoid creating a new array M.",
+  FontSize->18,
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.7258314160923615`*^9, 3.725831465834697*^9}, {
+  3.725831503018634*^9, 
+  3.725831504015269*^9}},ExpressionUUID->"5e186213-176c-48be-8f75-\
+08ca63b51326"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    StyleBox["def",
+     FontSize->14], 
+    StyleBox[" ",
+     FontSize->14], "makeWizardMoney"}], "-", 
+   RowBox[{"new", 
+    RowBox[{"(", "A", ")"}], " ", 
+    RowBox[{"{", "\n", "\t", 
+     RowBox[{"maxCoinsSoFar", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"0", "\n", "\t", "min"}], " ", "=", " ", 
+       RowBox[{
+        RowBox[{"A", "[", "0", "]"}], "\n", "\t", "for", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"int", " ", "i"}], " ", "=", " ", "0"}], ";", " ", 
+          RowBox[{"i", " ", "<", " ", 
+           RowBox[{
+            RowBox[{"length", 
+             RowBox[{"(", "A", ")"}]}], "-", "1"}]}], ";", " ", 
+          RowBox[{"i", "++"}]}], ")"}], " ", 
+        RowBox[{"{", "\n", "\t\t", 
+         RowBox[{
+          RowBox[{"if", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"A", "[", "i", "]"}], " ", "<", " ", "min"}], ")"}], 
+           "\n", "\t\t\t", "min"}], " ", "=", " ", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"A", "[", "i", "]"}], "\n", "\t\t", "if", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"A", "[", "i", "]"}], " ", "-", " ", "min"}], " ", ">",
+               " ", "maxCoinsSoFar"}], ")"}], "\n", "\t\t\t", "max"}], " ", 
+           "=", " ", 
+           RowBox[{
+            RowBox[{"A", "[", "i", "]"}], " ", "-", " ", "min"}]}]}], "\n", 
+         "\t", "}"}], "\n", "\t", "return", " ", "maxCoinsSoFar"}]}]}], "\t", 
+     "\n", "}"}]}]}],
+  FontSize->14]], "Code",
+ CellChangeTimes->{{3.725831536695263*^9, 3.7258317570624647`*^9}, {
+  3.7258325196556177`*^9, 
+  3.725832520299302*^9}},ExpressionUUID->"c88bdb7d-7207-4cab-97d0-\
+55d1cb15f271"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 3", "Section",
+ CellChangeTimes->{{3.7258318075648227`*^9, 
+  3.725831809604248*^9}},ExpressionUUID->"d8837751-a5c3-48e7-8ab7-\
+f27d0c84b027"],
+
+Cell[TextData[{
+ StyleBox["(15 pts) Consider the problem of linear search. The input is a \
+sequence of ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["n",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" numbers A = [ ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "1"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"a1b5c3e9-6f93-4fcb-9d6f-155ca9efc65d"],
+ StyleBox[", ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"f6303151-5585-4e18-a0da-1f33a5fab488"],
+ StyleBox[", ... , ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "n"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"9b58dd9c-9b07-4fa6-8b95-614aa52f1350"],
+ StyleBox["] and a target value ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["v",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[". The output is an index",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[" i",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" such that ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["v",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" = A[i] or the special value NIL if ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["v",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" does not appear in A.",
+  FontSize->18,
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.725831977455798*^9, 
+  3.725832083633271*^9}},ExpressionUUID->"c4d6065b-f3ec-48ee-abe9-\
+623a5d232beb"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["(a) \tWrite pseudocode for a simple linear search algorithm, which \
+will scan through the input sequence A looking for ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["v",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[".",
+  FontSize->18,
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.725832307212413*^9, 3.725832333313854*^9}, {
+  3.725832579511038*^9, 
+  3.725832579793824*^9}},ExpressionUUID->"99d53e85-d636-41b7-9f65-\
+d5be5a20d8a2"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"def", " ", "linearSearch", 
+   RowBox[{"(", 
+    RowBox[{"A", ",", " ", "v"}], ")"}], " ", 
+   RowBox[{"{", "\n", "\t", 
+    RowBox[{
+     RowBox[{"var", " ", "f"}], " ", "=", " ", 
+     RowBox[{"NIL", "\n", "\t", "for", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"int", " ", "i"}], " ", "=", " ", "0"}], ";", " ", 
+        RowBox[{"i", " ", "<", " ", 
+         RowBox[{
+          RowBox[{"length", 
+           RowBox[{"(", "A", ")"}]}], "-", "1"}]}], ";", " ", 
+        RowBox[{"i", "++"}]}], ")"}], " ", 
+      RowBox[{"{", "\n", "\t\t", 
+       RowBox[{
+        RowBox[{"if", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"A", "[", "i", "]"}], " ", "\[Equal]", " ", "v"}], ")"}], 
+         "\n", "\t\t\t", "f"}], " ", "=", " ", 
+        RowBox[{"i", "\n", "\t\t\t", "return", " ", "f"}]}], "\n", "\t", 
+       "}"}], "\n", "\t", "return", " ", "NIL"}]}], "\n", "}"}]}],
+  FontSize->14]], "Code",
+ CellChangeTimes->{{3.725832386526462*^9, 3.7258325247070293`*^9}, {
+  3.72583285812224*^9, 
+  3.7258329077482986`*^9}},ExpressionUUID->"34e63c7f-3a0f-4144-b464-\
+8ae02aa27d4f"],
+
+Cell[TextData[{
+ StyleBox["\n(b) \tUsing a loop invariant, prove that your algorithm is \
+correct. Be sure that your loop invariant and proof covers the \
+initialization, maintenance, and termination conditions.\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["Loop Invariant:\tThe variable ",
+  FontSize->18],
+ StyleBox["f",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" will always contain either ",
+  FontSize->18],
+ StyleBox["NIL",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[" or the ",
+  FontSize->18],
+ StyleBox["index i such that v=A[i]",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[".\n\nInitialization:\t\t",
+  FontSize->18],
+ StyleBox["f = NIL",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[" ;  initialized to NIL in the beginning of the algorithm.\n\
+Maintenance:\t\tDuring every loop, ",
+  FontSize->18],
+ StyleBox["f",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" either remains ",
+  FontSize->18],
+ StyleBox["NIL",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[" or ",
+  FontSize->18],
+ StyleBox["f = i  if  v=A[i]\n",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["Termination:\t\tIf ",
+  FontSize->18],
+ StyleBox["v",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" is not in A,  ",
+  FontSize->18],
+ StyleBox["f = NIL",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["\n\t\t\t\tIf ",
+  FontSize->18],
+ StyleBox["v",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox["  is in A, \t",
+  FontSize->18],
+ StyleBox["f = i",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]]
+}], "Text",
+ CellChangeTimes->{{3.725832572952585*^9, 3.725832709864822*^9}, {
+  3.7258327440467587`*^9, 3.7258327706635723`*^9}, {3.7258329143087244`*^9, 
+  3.725833044090988*^9}, {3.725833084060317*^9, 
+  3.7258331965686345`*^9}},ExpressionUUID->"83f2f734-2178-41b1-a6ce-\
+70dab9ea64ef"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 4", "Section",
+ CellChangeTimes->{{3.7258332637142615`*^9, 
+  3.7258332659402237`*^9}},ExpressionUUID->"8e7c5508-040b-4b25-a8ec-\
+4bb8491fab18"],
+
+Cell[TextData[{
+ StyleBox["(15 pts) Crabbe and Goyle are arguing about binary search. Goyle \
+writes the following pseudocode on the board, which he claims implements a \
+binary search for a target value ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["v",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" within input array A containing ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["n",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" elements.",
+  FontSize->18,
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.7258332770738106`*^9, 3.7258332835069494`*^9}, 
+   3.72583332077306*^9},ExpressionUUID->"63bb9243-bfa2-4087-b44b-\
+d14fb7fb4e23"],
+
+Cell[BoxData[{
+ RowBox[{"bSearch", 
+  RowBox[{"(", 
+   RowBox[{"A", ",", " ", "v"}], ")"}], " ", 
+  RowBox[{"{", "\n", 
+   RowBox[{
+    StyleBox["1",
+     Background->RGBColor[1, 0.85, 0.85]], 
+    StyleBox[",",
+     Background->RGBColor[1, 0.85, 0.85]], 
+    RowBox[{
+     StyleBox["2",
+      Background->RGBColor[1, 0.85, 0.85]], "\t", "return", " ", 
+     "binarySearch", 
+     RowBox[{"(", 
+      RowBox[{"A", ",", " ", "1", ",", " ", 
+       RowBox[{"n", "-", "1"}], ",", " ", "v"}], ")"}]}]}], "\n", 
+   "}"}]}], "\n", 
+ RowBox[{"binarySearch", 
+  RowBox[{"(", 
+   RowBox[{"A", ",", " ", "l", ",", " ", "r", ",", " ", "v"}], ")"}], " ", 
+  RowBox[{"{", "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      StyleBox["3",
+       Background->RGBColor[1, 0.85, 0.85]], "\t", "if", " ", "l"}], " ", "<=",
+      " ", 
+     RowBox[{
+      RowBox[{"r", " ", "then", " ", "\n", "\t\t", "return"}], " ", "-", 
+      RowBox[{"1", "\n", "\t", "p"}]}]}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"floor", 
+      RowBox[{"(", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"l", " ", "+", " ", "r"}], ")"}], "/", "2"}], " ", ")"}], 
+      "\n", "\t", "\n", "\t", "if", " ", 
+      RowBox[{"A", "[", "p", "]"}]}], " ", "==", " ", 
+     RowBox[{
+     "v", " ", "then", " ", "\n", "\t\t", "return", " ", "p", "\n", "\t", 
+      "if", " ", 
+      RowBox[{"A", "[", "p", "]"}]}], " ", "<", " ", 
+     RowBox[{"v", " ", "then", "\n", "\t\t", "return", " ", "binarySearch", 
+      RowBox[{"(", 
+       RowBox[{"A", ",", " ", 
+        RowBox[{"p", "+", "1"}], ",", " ", "r", ",", " ", "v"}], ")"}], "\n", 
+      "\t", "else", " ", "\n", "\t\t", "return", " ", "binarySearch", 
+      RowBox[{"(", 
+       RowBox[{"A", ",", " ", "l", ",", " ", 
+        RowBox[{"p", "-", "1"}], ",", " ", "v"}], ")"}]}]}]}], "\n", 
+   "}"}]}]}], "Code",
+ CellChangeTimes->{{3.72583342538336*^9, 3.725833504185043*^9}, {
+  3.725833664691042*^9, 
+  3.7258337047054586`*^9}},ExpressionUUID->"06f318ab-11ab-4dbb-b655-\
+d62647fc24ff"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["(a)\tHelp Crabbe determine whether this code performs a correct \
+binary search. If it does, prove to Goyle that the algorithm is correct. If \
+it is not, state the bug(s), give line(s) of code that are correct, and then \
+prove to Goyle that your fixed algorithm is correct.\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["Potential Bugs:\n\t",
+  FontSize->18],
+ StyleBox["1",
+  FontSize->18,
+  Background->RGBColor[1, 0.85, 0.85]],
+ StyleBox[")\tThe return statement cuts out the first index; should be  ",
+  FontSize->18],
+ StyleBox["return binarySearch(A, 0, n-1, v)",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[".\n\t",
+  FontSize->18],
+ StyleBox["2",
+  FontSize->18,
+  Background->RGBColor[1, 0.85, 0.85]],
+ StyleBox[")\tn is never defined; should define above return statement as  ",
+  FontSize->18],
+ StyleBox["n = length(A)",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[".\n\t",
+  FontSize->18],
+ StyleBox["3",
+  FontSize->18,
+  Background->RGBColor[1, 0.85, 0.85]],
+ StyleBox[")\tLeft bound is always less than right so the code will never \
+run; should be  ",
+  FontSize->18],
+ StyleBox["if (L > R) then...\n\t\n",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox["Fixed Code: ",
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.725833325353242*^9, 3.7258333300046215`*^9}, {
+  3.7258335230491867`*^9, 3.725833562706699*^9}, {3.7258336188009744`*^9, 
+  3.725833634648081*^9}, {3.7258337278420095`*^9, 3.7258337349890285`*^9}, {
+  3.725833769554991*^9, 3.7258340479055357`*^9}, {3.725834079967791*^9, 
+  3.7258340911475787`*^9}},ExpressionUUID->"91b0f63c-5f96-4785-ab85-\
+34dcd2fd01d0"],
+
+Cell[BoxData[{
+ RowBox[{"bSearch", 
+  RowBox[{"(", 
+   RowBox[{"A", ",", " ", "v"}], ")"}], " ", 
+  RowBox[{"{", "\n", "\t", 
+   RowBox[{
+    StyleBox["n",
+     Background->RGBColor[1, 0.85, 0.85]], 
+    StyleBox[" ",
+     Background->RGBColor[1, 0.85, 0.85]], 
+    StyleBox["=",
+     Background->RGBColor[1, 0.85, 0.85]], 
+    StyleBox[" ",
+     Background->RGBColor[1, 0.85, 0.85]], 
+    RowBox[{
+     StyleBox[
+      RowBox[{"length", 
+       RowBox[{"(", "A", ")"}]}],
+      Background->RGBColor[1, 0.85, 0.85]], "\n", "\t", "return", " ", 
+     "binarySearch", 
+     RowBox[{"(", 
+      RowBox[{"A", ",", " ", 
+       StyleBox["0",
+        Background->RGBColor[1, 0.85, 0.85]], 
+       StyleBox[",",
+        Background->RGBColor[1, 0.85, 0.85]], 
+       StyleBox[" ",
+        Background->RGBColor[1, 0.85, 0.85]], 
+       StyleBox[
+        RowBox[{"n", "-", "1"}],
+        Background->RGBColor[1, 0.85, 0.85]], ",", " ", "v"}], ")"}]}]}], 
+   "\n", "}"}]}], "\n", 
+ RowBox[{"binarySearch", 
+  RowBox[{"(", 
+   RowBox[{"A", ",", " ", "l", ",", " ", "r", ",", " ", "v"}], ")"}], " ", 
+  RowBox[{"{", "\n", "\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"if", " ", 
+      StyleBox[
+       RowBox[{"(", 
+        RowBox[{"l", " ", ">", " ", "r"}], ")"}],
+       Background->RGBColor[1, 0.85, 0.85]], " ", "then", " ", "\n", "\t\t", 
+      "return"}], " ", "-", 
+     RowBox[{"1", "\n", "\t", "p"}]}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"floor", 
+      RowBox[{"(", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"l", " ", "+", " ", "r"}], ")"}], "/", "2"}], " ", ")"}], 
+      "\n", "\t", "\n", "\t", "if", " ", 
+      RowBox[{"A", "[", "p", "]"}]}], " ", "==", " ", 
+     RowBox[{
+     "v", " ", "then", " ", "\n", "\t\t", "return", " ", "p", "\n", "\t", 
+      "if", " ", 
+      RowBox[{"A", "[", "p", "]"}]}], " ", "<", " ", 
+     RowBox[{"v", " ", "then", "\n", "\t\t", "return", " ", "binarySearch", 
+      RowBox[{"(", 
+       RowBox[{"A", ",", " ", 
+        RowBox[{"p", "+", "1"}], ",", " ", "r", ",", " ", "v"}], ")"}], "\n", 
+      "\t", "else", " ", "\n", "\t\t", "return", " ", "binarySearch", 
+      RowBox[{"(", 
+       RowBox[{"A", ",", " ", "l", ",", " ", 
+        RowBox[{"p", "-", "1"}], ",", " ", "v"}], ")"}]}]}]}], "\n", 
+   "}"}]}]}], "Code",
+ CellChangeTimes->{{3.7258340986485224`*^9, 
+  3.7258341338812265`*^9}},ExpressionUUID->"ab3f7da2-44f0-461c-bc8c-\
+7853c05af09f"],
+
+Cell[TextData[{
+ StyleBox["Loop Invariant:\tIf v is in A, then ",
+  FontSize->18],
+ StyleBox["v",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" must always be between A[l] and A[r] or equal to one of them ",
+  FontSize->18],
+ StyleBox["(A[l] \[LessEqual] v \[LessEqual] A[r])",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["\n\nInitialization:\t\t",
+  FontSize->18],
+ StyleBox["v",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" is a value in array A with bounds",
+  FontSize->18],
+ StyleBox[" l = 0",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" and ",
+  FontSize->18],
+ StyleBox["r = length(A)",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" ; so ",
+  FontSize->18],
+ StyleBox["(A[l] \[LessEqual] v \[LessEqual] A[r])",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["\nMaintenance:\t\tDuring every recursion, the bounds reduce by \
+half.\n\t\t\t\tIf ",
+  FontSize->18],
+ StyleBox["v < p",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[", then it is between bounds ",
+  FontSize->18],
+ StyleBox["l = 0",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[" and ",
+  FontSize->18],
+ StyleBox["r = p-1\n\t\t\t\t",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["If ",
+  FontSize->18],
+ StyleBox["v > p",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[", then it is between bounds ",
+  FontSize->18],
+ StyleBox["l = p+1",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox[" and ",
+  FontSize->18],
+ StyleBox["r = length(A)\n\t\t\t\t",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["If ",
+  FontSize->18],
+ StyleBox["v = p",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[", then the algorithm terminates.",
+  FontSize->18],
+ StyleBox["\t\t\t\t\n",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ StyleBox["Termination:\t\tEither ",
+  FontSize->18],
+ StyleBox["v",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" is found in A, or the bounds ",
+  FontSize->18],
+ StyleBox["l",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" and ",
+  FontSize->18],
+ StyleBox["r",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" eventually become equal and determine ",
+  FontSize->18],
+ StyleBox["v",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox[" is not in A.",
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.725834191069368*^9, 3.7258342972024612`*^9}, {
+  3.7258343653588037`*^9, 3.72583458929854*^9}, {3.7258346198388104`*^9, 
+  3.7258346466360755`*^9}, {3.7258346827862444`*^9, 
+  3.7258348222738624`*^9}},ExpressionUUID->"888d3c60-3282-44b4-9427-\
+d0c367cdbce2"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["(b)\t Goyle tells Crabbe that binary search is efficient because, \
+at worst, it divides the remaining problem size in half at each step. In \
+response Crabbe claims that four-nary search, which would divide the \
+remaining array A into fourths at each step, would be way more efficient. \
+Explain who is correct and why.\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["In this case, neither Crabbe or Goyle are correct. To find the \
+time complexity for the binary search algorithm, one must consider how to get \
+1 by dividing N/2 a specific number of times ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    RowBox[{"(", 
+     RowBox[{"1", "=", 
+      RowBox[{"N", "/", 
+       SuperscriptBox["2", "x"]}]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"88d16efc-de62-481f-a3ef-17f2c832b204"],
+ StyleBox[". This results in a time complexity of \[CapitalOmicron](log(n)). \
+For a four-nary search, the difference is a constant ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    RowBox[{"(", 
+     RowBox[{"1", "=", 
+      RowBox[{"4", 
+       RowBox[{"N", "/", 
+        SuperscriptBox["2", "x"]}]}]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"64946c54-a88c-4044-bb2f-cc94107b73bb"],
+ StyleBox[", resulting in a time complexity of \[CapitalOmicron](4log(n)). \
+Because we are working with the RAM model of computation, this difference of \
+a constant between the time complexities of the algorithms is negligible when \
+it comes to pure efficiency. Therefore, neither Crabbe or Goyle are correct.",
+  FontSize->18],
+ StyleBox["\n",
+  FontSize->18,
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.7258349079394755`*^9, 3.725834937247445*^9}, {
+  3.7258363568336015`*^9, 
+  3.725836726037818*^9}},ExpressionUUID->"66fbd658-f65e-4294-9cbe-\
+b14f305713b7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 5", "Section",
+ CellChangeTimes->{{3.7258349599950094`*^9, 
+  3.7258349620885353`*^9}},ExpressionUUID->"115ca5ec-1e95-4197-8b0a-\
+5b8ad700dd1e"],
+
+Cell[TextData[StyleBox["(10 pts extra-credit) You are given two arrays of \
+integers A and B, both of which are sorted in ascending order. Consider the \
+following algorithm for checking whether or not A and B have an element in \
+common.",
+ FontSize->18,
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.725834984680644*^9, 
+  3.7258350059783306`*^9}},ExpressionUUID->"50cf796d-e00c-4f88-a106-\
+5f7ba2fa2b19"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"findCommonElement", 
+    RowBox[{"(", 
+     RowBox[{"A", ",", " ", "B"}], ")"}]}], " ", ":", "\n", "\t", 
+   RowBox[{"#", " ", "assume", " ", "A"}]}], ",", 
+  RowBox[{
+  "B", " ", "are", " ", "both", " ", "sorted", " ", "in", " ", "ascending", 
+   " ", "order"}]}], "\n", 
+ RowBox[{"\t", 
+  RowBox[{
+   RowBox[{"for", " ", "i"}], " ", "=", " ", 
+   RowBox[{"0", " ", "to", " ", "length", 
+    RowBox[{"(", "A", ")"}], " ", 
+    RowBox[{"{", "                  ", 
+     RowBox[{
+      RowBox[{
+      "#", " ", "iterate", " ", "through", " ", "A", "\n", "\t\t", "for", " ",
+        "j"}], " ", "=", " ", 
+      RowBox[{"0", " ", "to", " ", "length", 
+       RowBox[{"(", "B", ")"}], " ", 
+       RowBox[{"{", "              ", 
+        RowBox[{
+        "#", " ", "iterate", " ", "through", " ", "B", "\n", "\t\t\t", "if", 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"A", "[", "i", "]"}], " ", "==", " ", 
+           RowBox[{"B", "[", "j", "]"}]}], ")"}], " ", 
+         RowBox[{"{", " ", 
+          RowBox[{"return", " ", "TRUE"}], " ", "}"}], " ", "#", " ", "check",
+          " ", "pairwise"}], "\n", "\t\t", "}"}]}]}], "\n", "\t", 
+     "}"}]}]}]}], "\n", 
+ RowBox[{"return", " ", "FALSE"}]}], "Code",
+ CellChangeTimes->{{3.7258350256025114`*^9, 
+  3.725835076688408*^9}},ExpressionUUID->"6f11df2e-d99b-4f25-966a-\
+aa7a2547cc83"],
+
+Cell[TextData[{
+ StyleBox["\n(a)\t If arrays A and B have size n, what is the worst case \
+running time of the procedure findCommonElement? Provide a \[CapitalTheta] \
+bound.\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["*the code has 2 for-loops based on size ",
+  FontSize->18],
+ StyleBox["n\n ",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox["\n",
+  FontSize->18],
+ StyleBox["so",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox["...   ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     SuperscriptBox["\[Sum]", "n"], 
+     RowBox[{"i", "=", "0"}]], 
+    RowBox[{"[", " ", 
+     RowBox[{
+      SubscriptBox[
+       SuperscriptBox["\[Sum]", "n"], 
+       RowBox[{"j", "=", "0"}]], 
+      RowBox[{"[", " ", 
+       RowBox[{"...", "..."}], "]"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"90ef3000-97f4-4c0d-8f98-cd28348c445f"],
+ StyleBox["  \n\n\[Therefore]    ",
+  FontSize->18],
+ StyleBox["time complexity is ",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalTheta]", "(", 
+    SuperscriptBox["n", "2"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,
+  Background->RGBColor[1, 1, 0.85],ExpressionUUID->
+  "50b7aba6-b3e0-47c1-b98f-b69f1cd2e2b9"]
+}], "Text",
+ CellChangeTimes->{{3.7258351005138316`*^9, 3.725835128131265*^9}, {
+  3.7258351676995316`*^9, 
+  3.7258352365517025`*^9}},ExpressionUUID->"faba82c6-6964-40ed-b415-\
+04e925196baa"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["(b)\t For ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["n",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[" = 5, describe input arrays A1/B1 that will be the best case, and \
+arrays A2/B2 that will be the worst case for findCommonElement.\n\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["A1/B1  would be the best case if they both had the same number at \
+their respective first index. ",
+  FontSize->18],
+ StyleBox["(A1 = [2, 4, 5, 6], B1 = [2, 3, 5, 8])\n",
+  FontSize->18,
+  FontSlant->"Italic"],
+ StyleBox["A2/B2  would be the worst case if neither had a common element. ",
+  FontSize->18],
+ StyleBox["(A2 = [2, 4, 6, 8], B2 = [3, 5, 7, 9])",
+  FontSize->18,
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.725835251275874*^9, 
+  3.7258355156352205`*^9}},ExpressionUUID->"e9f8d0e5-bde1-41c9-abe2-\
+efc6d5917101"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["(c)\t Write pseudocode for an algorithm that runs in \
+\[CapitalTheta](n) time for solving the problem. Your algorithm should use \
+the fact that A and B are sorted arrays.",
+  FontSize->18,
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.725835537087237*^9, 
+  3.7258355554320426`*^9}},ExpressionUUID->"74a92bf9-87fc-4da9-a2d0-\
+8022adc7aec2"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"def", " ", "mergeFindCommon", 
+   RowBox[{"(", 
+    RowBox[{"A", ",", " ", "B"}], ")"}], " ", 
+   RowBox[{"{", "\n", "\t", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"int", " ", 
+       RowBox[{"C", "[", "]"}]}], "  ", "//", 
+      RowBox[{
+      "initialize", " ", "C", " ", "array", " ", "same", " ", "length", " ", 
+       "as", " ", "A", " ", "and", " ", "B", "\n", "\t", "length"}]}], " ", 
+     "=", " ", 
+     RowBox[{"length", 
+      RowBox[{"(", "C", ")"}], "\n", " ", "\n", "    ", "while", " ", 
+      RowBox[{"(", 
+       RowBox[{"i", " ", "<", " ", 
+        RowBox[{"length", " ", "and", " ", "j"}], " ", "<", " ", "length"}], 
+       ")"}], " ", 
+      RowBox[{"{", "\n", "        ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"if", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"A", "[", "i", "]"}], " ", "<", " ", 
+            RowBox[{"B", "[", "j", "]"}]}], ")"}], "\n", "            ", 
+          RowBox[{"C", "[", 
+           RowBox[{"k", "++"}], "]"}]}], " ", "=", " ", 
+         RowBox[{"A", "[", 
+          RowBox[{"i", "++"}], "]"}]}], ";", "\n", "        ", 
+        RowBox[{"else", "\n", "            ", 
+         RowBox[{
+          RowBox[{"C", "[", 
+           RowBox[{"k", "++"}], "]"}], " ", "=", " ", 
+          RowBox[{"B", "[", 
+           RowBox[{"j", "++"}], "]"}]}]}], ";"}], "\n", "    ", "}"}], "\n", 
+      "    ", "\n", "    ", "for", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"int", " ", "n"}], " ", "=", " ", "0"}], ";", " ", 
+        RowBox[{"n", " ", "<", " ", "length"}], ";", " ", 
+        RowBox[{"n", "++"}]}], ")"}], " ", 
+      RowBox[{"{", "\n", "\t\t", 
+       RowBox[{"if", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"C", "[", "n", "]"}], " ", "\[Equal]", " ", 
+          RowBox[{"C", "[", 
+           RowBox[{"n", "+", "1"}], "]"}]}], ")"}], "\n", "\t\t\t", "return", 
+        " ", "True"}], "\n", "    ", "}"}], "\n", "    ", "return", " ", 
+      "False"}]}], "\n", "}"}]}],
+  FontSize->14]], "Code",
+ CellChangeTimes->{{3.7258356716081095`*^9, 
+  3.7258359540425186`*^9}},ExpressionUUID->"a668d3d6-9ddf-439d-975e-\
+6a046ebec1f1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sources", "Section",
+ CellChangeTimes->{{3.725836042904468*^9, 
+  3.725836043944232*^9}},ExpressionUUID->"94422c5a-962e-47c7-bd49-\
+02b07878ce41"],
+
+Cell[TextData[{
+ StyleBox["Websites:\n\t",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["For Question 4b - \
+https://stackoverflow.com/questions/8185079/how-to-calculate-binary-search-\
+complexity",
+  FontSize->18],
+ StyleBox["\n\t",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["For Question",
+  FontSize->18],
+ StyleBox[" ",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["5c - https://www.geeksforgeeks.org/merge-two-sorted-arrays/ \n\t\n",
+  FontSize->18],
+ StyleBox["People:",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["\n\tKrish Dholakiya\n\tGeorge Allison\n\tSelena Quintanilla \n\t\
+Eric Oropezealwood",
+  FontSize->18]
+}], "Text",
+ CellChangeTimes->{{3.7258360572426233`*^9, 3.7258362003633757`*^9}, {
+   3.7258362323704834`*^9, 3.725836260907401*^9}, 
+   3.7258363116233296`*^9},ExpressionUUID->"fd616a9f-9445-41f3-8e7b-\
+dbf4b623c643"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1144, 817},
+WindowMargins->{{137, Automatic}, {Automatic, 40}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 222, 5, 104, "Text",ExpressionUUID->"5102a1a3-1916-4334-8c5c-22a1ce94f989"],
+Cell[CellGroupData[{
+Cell[805, 29, 160, 3, 96, "Title",ExpressionUUID->"b6567dea-8928-49b6-82a7-93227faffffd"],
+Cell[CellGroupData[{
+Cell[990, 36, 156, 3, 67, "Section",ExpressionUUID->"a3d8e008-43ee-4ca2-a33c-ca738bd2a8b7"],
+Cell[1149, 41, 935, 14, 64, "Text",ExpressionUUID->"96824ee6-a15e-4126-afe5-a10ef5b6f8cd"],
+Cell[2087, 57, 26279, 854, 1477, "Text",ExpressionUUID->"ac1ae975-f18b-4b4e-a05b-4912da74db80"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28403, 916, 158, 3, 67, "Section",ExpressionUUID->"0aa7c719-ba12-44ec-be9e-89c1a8b9d8ca"],
+Cell[28564, 921, 792, 16, 113, "Text",ExpressionUUID->"9700a364-cec8-40ec-8f59-1f13f1b88545"],
+Cell[29359, 939, 444, 14, 38, "Text",ExpressionUUID->"23fb188e-14f2-48ef-aeab-608502755d05"],
+Cell[29806, 955, 1653, 47, 208, "Code",ExpressionUUID->"bd9ccd27-a16a-42c0-b0a0-774e0e198a8d"],
+Cell[31462, 1004, 1986, 62, 226, "Text",ExpressionUUID->"07f47812-28d5-4d20-8453-2d1fd2c3ada8"],
+Cell[33451, 1068, 908, 28, 142, "Text",ExpressionUUID->"f0ef8481-7384-487c-8451-f6b089fee94f"],
+Cell[34362, 1098, 1660, 48, 274, "Text",ExpressionUUID->"b07ea77a-cb55-43b0-8edf-5cfce8e67294"],
+Cell[36025, 1148, 666, 22, 112, "Text",ExpressionUUID->"c0497f92-e22a-499c-ba91-dc43dc409f91"],
+Cell[36694, 1172, 401, 10, 86, "Text",ExpressionUUID->"5e186213-176c-48be-8f75-08ca63b51326"],
+Cell[37098, 1184, 1781, 49, 274, "Code",ExpressionUUID->"c88bdb7d-7207-4cab-97d0-55d1cb15f271"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38916, 1238, 156, 3, 67, "Section",ExpressionUUID->"d8837751-a5c3-48e7-8ab7-f27d0c84b027"],
+Cell[39075, 1243, 1748, 65, 64, "Text",ExpressionUUID->"c4d6065b-f3ec-48ee-abe9-623a5d232beb"],
+Cell[40826, 1310, 512, 17, 60, "Text",ExpressionUUID->"99d53e85-d636-41b7-9f65-d5be5a20d8a2"],
+Cell[41341, 1329, 1166, 31, 230, "Code",ExpressionUUID->"34e63c7f-3a0f-4144-b464-8ae02aa27d4f"],
+Cell[42510, 1362, 1909, 67, 272, "Text",ExpressionUUID->"83f2f734-2178-41b1-a6ce-70dab9ea64ef"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44456, 1434, 158, 3, 67, "Section",ExpressionUUID->"8e7c5508-040b-4b25-a8ec-4bb8491fab18"],
+Cell[44617, 1439, 711, 23, 64, "Text",ExpressionUUID->"63bb9243-bfa2-4087-b44b-d14fb7fb4e23"],
+Cell[45331, 1464, 2007, 55, 303, "Code",ExpressionUUID->"06f318ab-11ab-4dbb-b655-d62647fc24ff"],
+Cell[47341, 1521, 1653, 47, 294, "Text",ExpressionUUID->"91b0f63c-5f96-4785-ab85-34dcd2fd01d0"],
+Cell[48997, 1570, 2413, 68, 321, "Code",ExpressionUUID->"ab3f7da2-44f0-461c-bc8c-7853c05af09f"],
+Cell[51413, 1640, 2602, 99, 220, "Text",ExpressionUUID->"888d3c60-3282-44b4-9427-d0c367cdbce2"],
+Cell[54018, 1741, 1934, 47, 294, "Text",ExpressionUUID->"66fbd658-f65e-4294-9cbe-b14f305713b7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55989, 1793, 158, 3, 67, "Section",ExpressionUUID->"115ca5ec-1e95-4197-8b0a-5b8ad700dd1e"],
+Cell[56150, 1798, 414, 8, 64, "Text",ExpressionUUID->"50cf796d-e00c-4f88-a106-5f7ba2fa2b19"],
+Cell[56567, 1808, 1411, 37, 177, "Code",ExpressionUUID->"6f11df2e-d99b-4f25-966a-aa7a2547cc83"],
+Cell[57981, 1847, 1515, 50, 226, "Text",ExpressionUUID->"faba82c6-6964-40ed-b415-04e925196baa"],
+Cell[59499, 1899, 899, 27, 164, "Text",ExpressionUUID->"e9f8d0e5-bde1-41c9-abe2-efc6d5917101"],
+Cell[60401, 1928, 386, 10, 86, "Text",ExpressionUUID->"74a92bf9-87fc-4da9-a2d0-8022adc7aec2"],
+Cell[60790, 1940, 2207, 57, 406, "Code",ExpressionUUID->"a668d3d6-9ddf-439d-975e-6a046ebec1f1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63034, 2002, 152, 3, 67, "Section",ExpressionUUID->"94422c5a-962e-47c7-bd49-02b07878ce41"],
+Cell[63189, 2007, 863, 28, 246, "Text",ExpressionUUID->"fd616a9f-9445-41f3-8e7b-dbf4b623c643"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
