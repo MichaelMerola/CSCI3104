@@ -1,2 +1,2 @@
 # CSCI3104
-Coursework for CU Boulder Algorithms Spring 2018
+Coursework for CS Algorithms, CU Boulder Spring 2018
